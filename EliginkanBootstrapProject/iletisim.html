@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Slider Yapımı</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.grid.min.css">
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+
+<style>
+	h3{
+		color: #B22222;
+		text-shadow: 1px 1px 1px #696969;
+	}	
+</style>
+
+<body>
+		<nav class="navbar navbar-expand-lg navbar-ligth bg-light">
+		<a class="navbar-brand" href="#">
+			<img src="img/elginkan-logo.jpg" class="d-inline-block align-top">
+		</a>	
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarid" aria-controls="navbar" aria-controls="false" aria-label="false" aria-label="Toggle Navigasyon">
+			<span class="navbar-toggler-icon"></span>
+		</button>	
+
+		<div class="collapse navbar-collapse" id="navbarid">
+			<ul class="navbar-nav"> <!-- class'a ml-auto eklersek nav'ı sağa tarafa taşır.--> 
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Anasayfa <span class="sr-only">(current)</span></a> <!--sr(screen reader) demektir-->
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ürünler</a>	
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			          <a class="dropdown-item" href="urunler.html">Ürün-1</a>
+			          <a class="dropdown-item" href="#">Ürün-2</a>
+			          <a class="dropdown-item" href="#">Ürün-3</a>
+			        </div>									
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="galeri.html">Galeri</a>					
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="iletisim.html">İletişim</a>
+				</li>
+			</ul>
+		</div>
+		<form class="form-inline ml-auto ">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="search">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ara</button> <!-- my-2 y ekseninde margin variyor üstten ve alttan(mx de olabilir)-->
+		</form>
+	</nav>
+	<div class="row ml-3 mt-5">
+		<div class="col-md-3">
+			<h3>İletişim Formu</h3>
+			<form>
+				<div class="form-group"> 
+					<label for="eposta">E-Posta Adresi</label>
+					<input type="email" class="form-control" id="eposta" placeholder="E-posta Adresinizi Girin" required>
+					<small id="epostayardim" class="form-text text-muted">E-posta adresinizi kimse ile paylaşmayacağız.</small>
+				</div>
+
+				<div class="form-group">
+					<label for="sifre">Şifre</label>
+					<input type="password" class="form-control" id="sifre" placeholder="Şifreniz" required>						
+				</div>
+
+				<div class="form-group form-check">
+					<input type="checkbox" class="form-check-input" id="check1">
+					<label class="form-check-label" for="check1">Beni Hatırla</label>
+				</div>
+				<div class="row justify-content-center mb-1">
+					<button type="submit" class="btn btn-danger">Gönder</button>
+				</div>
+			</form>			
+		</div>
+	</div>
+</body>
+</html>
